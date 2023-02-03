@@ -1,49 +1,45 @@
-import { HomeContainer, SpansContainer, TextContainer } from './styles'
+import { Hero } from '../../components/Hero'
+import { CoffeeContainer, HomeContainer } from './styles'
 
-import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
-import cafeGigante from '../../assets/cafe-gigante.svg'
+import { ShoppingCartSimple } from 'phosphor-react'
+
+import cafeExpresso from '../../assets/cafe-expresso.svg'
+import cafeAmericano from '../../assets/cafe-americano.svg'
+import expressoCremoso from '../../assets/cafe-expresso-cremoso.svg'
 
 export function Home() {
   return (
-    <HomeContainer>
-      <TextContainer>
-        <div className="title">
-          <h1>Encontre o café perfeito para qualquer hora do dia</h1>
-          <p>
-            Com coffee Delivery você recebe seu café onde estiver, a qualquer
-            hora
-          </p>
-        </div>
+    <>
+      <Hero />
+      <HomeContainer>
+        <h2>Nossos cafés</h2>
 
-        <SpansContainer>
-          <div>
-            <span className="cart">
-              <ShoppingCart size={16} weight="fill" />
-            </span>
-            <p>Compra simples e segura</p>
-          </div>
-          <div>
-            <span className="package">
-              <Package size={16} weight="fill" />
-            </span>
-            <p>Embalagem mantém o café intacto</p>
-          </div>
-          <div>
-            <span className="timer">
-              <Timer size={16} weight="fill" />
-            </span>
-            <p>Entrega rápida e rastreada</p>
-          </div>
-          <div>
-            <span className="coffee">
-              <Coffee size={16} weight="fill" />
-            </span>
-            <p>O café chega fresquinho até você</p>
-          </div>
-        </SpansContainer>
-      </TextContainer>
+        <CoffeeContainer>
+          <img src={cafeExpresso} alt="" />
 
-      <img src={cafeGigante} alt="um grande copo de café com grãos ao redor" />
-    </HomeContainer>
+          <span>Tradicional</span>
+          <h3>Expresso Tradicional</h3>
+          <p>O tradicional café feito com água quente e grãos moídos</p>
+
+          <footer>
+            <p>R$9,90</p>
+            <div>
+              <span>- 1 +</span>
+              <span>
+                <ShoppingCartSimple size={22} weight="fill" />
+              </span>
+            </div>
+          </footer>
+        </CoffeeContainer>
+
+        <CoffeeContainer>
+          <img src={cafeAmericano} alt="" />
+        </CoffeeContainer>
+
+        <CoffeeContainer>
+          <img src={expressoCremoso} alt="" />
+        </CoffeeContainer>
+      </HomeContainer>
+    </>
   )
 }
