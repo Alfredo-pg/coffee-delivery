@@ -6,7 +6,7 @@ export const HeroContainer = styled.div`
   align-items: center;
   align-content: space-between;
 
-  gap: 7.5rem;
+  gap: 3.5rem;
 
   margin: 5.75rem 0;
 `

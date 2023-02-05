@@ -1,7 +1,14 @@
 import { Hero } from '../../components/Hero'
-import { CoffeeContainer, HomeContainer } from './styles'
+import {
+  CoffeeContainer,
+  CoffeeCountCartContainer,
+  CoffeeDescriptionConainer,
+  CoffeeFooterContainer,
+  CoffeePriceContainer,
+  HomeContainer,
+} from './styles'
 
-import { ShoppingCartSimple } from 'phosphor-react'
+import { Minus, Plus, ShoppingCartSimple } from 'phosphor-react'
 
 import cafeExpresso from '../../assets/cafe-expresso.svg'
 import cafeAmericano from '../../assets/cafe-americano.svg'
@@ -17,25 +24,43 @@ export function Home() {
         <CoffeeContainer>
           <img src={cafeExpresso} alt="" />
 
-          <span>Tradicional</span>
+          <CoffeeDescriptionConainer>
+            <p>TRADICONAL</p>
+          </CoffeeDescriptionConainer>
           <h3>Expresso Tradicional</h3>
           <p>O tradicional café feito com água quente e grãos moídos</p>
 
-          <footer>
-            <p>R$9,90</p>
-            <div>
-              <span>- 1 +</span>
+          <CoffeeFooterContainer>
+            <CoffeePriceContainer>
+              <p>R$</p>
+              <p>9,90</p>
+            </CoffeePriceContainer>
+
+            <CoffeeCountCartContainer>
+              <div>
+                <button>
+                  <Minus size={16} weight="bold" />
+                </button>
+                <p>1</p>
+                <button>
+                  <Plus size={16} weight="bold" />
+                </button>
+              </div>
+
               <span>
                 <ShoppingCartSimple size={22} weight="fill" />
               </span>
-            </div>
-          </footer>
+            </CoffeeCountCartContainer>
+          </CoffeeFooterContainer>
         </CoffeeContainer>
 
         <CoffeeContainer>
           <img src={cafeAmericano} alt="" />
         </CoffeeContainer>
 
+        <CoffeeContainer>
+          <img src={expressoCremoso} alt="" />
+        </CoffeeContainer>
         <CoffeeContainer>
           <img src={expressoCremoso} alt="" />
         </CoffeeContainer>
