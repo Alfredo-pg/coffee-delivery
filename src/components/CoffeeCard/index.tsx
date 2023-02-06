@@ -4,6 +4,7 @@ import {
   CoffeeDescriptionConainer,
   CoffeeFooterContainer,
   CoffeePriceContainer,
+  CoffeeShopingCartButton,
 } from './styles'
 
 import { Minus, Plus, ShoppingCartSimple } from 'phosphor-react'
@@ -38,9 +39,9 @@ export function CoffeeCard() {
             </button>
           </div>
 
-          <button>
+          <CoffeeShopingCartButton>
             <ShoppingCartSimple size={22} weight="fill" />
-          </button>
+          </CoffeeShopingCartButton>
         </CoffeeCountCartContainer>
       </CoffeeFooterContainer>
     </CoffeeContainer>

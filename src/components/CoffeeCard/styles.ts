@@ -122,21 +122,26 @@ export const CoffeeCountCartContainer = styled.div`
       cursor: pointer;
     }
   }
+`
 
-  button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
+export const CoffeeShopingCartButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
 
-    width: 2.375rem;
-    height: 2.375rem;
+  width: 2.375rem;
+  height: 2.375rem;
 
-    border-radius: 6px;
+  border-radius: 6px;
 
-    background-color: ${(props) => props.theme['purple-dark']};
-    color: ${(props) => props.theme['base-card']};
+  transition: background-color 0.2s;
+  background-color: ${(props) => props.theme['purple-dark']};
+  color: ${(props) => props.theme['base-card']};
 
-    cursor: pointer;
+  cursor: pointer;
+
+  &:hover {
+    background-color: ${(props) => props.theme.purple};
   }
 `
