@@ -16,6 +16,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 0.875rem;
+    border: none;
   }
 
   h1, h2 , h3, h4 {
