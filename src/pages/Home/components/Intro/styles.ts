@@ -8,7 +8,7 @@ export const IntroContainer = styled.div`
   background: ${() => `url(${introBackground})`} no-repeat;
   background-size: contain;
 
-  margin-top: 5.75rem;
+  margin: 5.75rem 0;
   gap: 3.5rem;
 `
 
