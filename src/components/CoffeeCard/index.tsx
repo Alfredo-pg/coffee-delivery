@@ -1,9 +1,6 @@
-import {
-  CoffeeCardContainer,
-  CoffeeCategories,
-  FooterContainer,
-} from './styles'
+import { CoffeeCardContainer, CoffeeCategories, FormContainer } from './styles'
 import expresso from '../../assets/coffees/expresso.svg'
+import { ShoppingCart } from 'phosphor-react'
 
 export function CoffeeCard() {
   return (
@@ -16,13 +13,18 @@ export function CoffeeCard() {
         <span>Especial</span>
       </CoffeeCategories>
 
-      <h1>Expresso Tradicional</h1>
+      <h2>Expresso Tradicional</h2>
 
       <p>O tradicional café feito com água quente e grãos moídos</p>
 
-      <FooterContainer>
-        <p>R$ 9,90</p>
-      </FooterContainer>
+      <FormContainer>
+        <label>9,90</label>
+        <input type="number" min={0} placeholder="0" />
+
+        <button>
+          <ShoppingCart size={22} weight="fill" />
+        </button>
+      </FormContainer>
     </CoffeeCardContainer>
   )
 }
