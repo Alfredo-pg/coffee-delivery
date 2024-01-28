@@ -10,10 +10,3 @@ export const CheckoutFormContainer = styled.form`
     color: ${(props) => props.theme['base-subtitle']};
   }
 `
-export const AddressContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 40rem;
-
-  background: ${(props) => props.theme['base-card']};
-`

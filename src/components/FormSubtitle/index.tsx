@@ -1,8 +1,26 @@
-export function FormSubtitle() {
+import { ReactNode } from 'react'
+import { FormSubtitleContainer, TextContainer } from './styles'
+
+interface FormSubtitleProps {
+  icon: ReactNode
+  variant: 'yellow-dark' | 'purple'
+  titulo: string
+  descricao: string
+}
+
+export function FormSubtitle({
+  icon,
+  variant,
+  titulo,
+  descricao,
+}: FormSubtitleProps) {
   return (
-    <div>
-      <h2>Endereço de Entrega</h2>
-      <p>Informe o endereço onde deseja receber seu pedido</p>
-    </div>
+    <FormSubtitleContainer $variant={variant}>
+      {icon}
+      <TextContainer>
+        <h2>{titulo}</h2>
+        <p>{descricao}</p>
+      </TextContainer>
+    </FormSubtitleContainer>
   )
 }

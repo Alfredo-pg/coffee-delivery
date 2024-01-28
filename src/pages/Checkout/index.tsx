@@ -1,27 +1,12 @@
-import { MapPinLine } from 'phosphor-react'
-import { AddressContainer, CheckoutFormContainer } from './styles'
-import { FormSubtitle } from '../../components/FormSubtitle'
+import { FormAddress } from './FormAddress'
+import { CheckoutFormContainer } from './styles'
 
 export function Checkout() {
   return (
     <CheckoutFormContainer>
       <section>
         <h1>Complete seu pedido</h1>
-
-        <AddressContainer>
-          <header>
-            <MapPinLine size={22} />
-            <FormSubtitle />
-          </header>
-
-          <input type="text" placeholder="CEP" />
-          <input type="text" placeholder="Rua" />
-          <input type="text" placeholder="Número" />
-          <input type="text" placeholder="Complemento" />
-          <input type="text" placeholder="Bairro" />
-          <input type="text" placeholder="Cidade" />
-          <input type="text" placeholder="UF" />
-        </AddressContainer>
+        <FormAddress />
 
         <div>
           <h2>Pagamento</h2>

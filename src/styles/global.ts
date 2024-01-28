@@ -19,6 +19,10 @@ export const GlobalStyle = createGlobalStyle`
     border: none;
   }
 
+  text-area:focus, input:focus {
+    outline: 1px solid ${(props) => props.theme['yellow-dark']};
+  }
+
   h1, h2 , h3, h4 {
     font-family: 'Baloo 2', sans-serif;
     font-weight: 800;
