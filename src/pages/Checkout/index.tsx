@@ -1,4 +1,5 @@
 import { FormAddress } from './FormAddress'
+import { Payment } from './Payment'
 import { CheckoutFormContainer } from './styles'
 
 export function Checkout() {
@@ -8,12 +9,7 @@ export function Checkout() {
         <h1>Complete seu pedido</h1>
         <FormAddress />
 
-        <div>
-          <h2>Pagamento</h2>
-          <p>
-            O pagamento é feito na entrega. Escolha a forma que deseja pagar.
-          </p>
-        </div>
+        <Payment />
       </section>
 
       <section>

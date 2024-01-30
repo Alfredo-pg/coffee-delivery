@@ -1,5 +1,5 @@
 import { MapPinLine } from 'phosphor-react'
-import { FormSubtitle } from '../../../components/FormSubtitle'
+import { FormSubtitle } from '../FormSubtitle'
 import { FormAddressContainer, InputsContainer } from './styles'
 
 export function FormAddress() {

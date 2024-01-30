@@ -1,5 +1,6 @@
 import CoffeBackground from '../../../../assets/coffee-background.svg'
-import { IntroIcon } from '../../../../components/IntroIcon'
+import { IntroIcon } from '../IntroIcon'
+
 import {
   IconsContainer,
   IntroContainer,
